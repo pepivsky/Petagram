@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="mx.pepivsky.petagram.MainActivity">
+
+
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/action_bar"
+        >
+    </include>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/miActionBar"
+        android:id="@+id/rv"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/rv"
+        android:src="@drawable/camera_icon"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="20dp"
+        >
+
+
+    </android.support.design.widget.FloatingActionButton>
+
+
+
+
+
+</RelativeLayout>
